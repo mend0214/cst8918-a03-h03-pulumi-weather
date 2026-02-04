@@ -35,7 +35,7 @@ ADD . .
 RUN npm run build
 
 # Finally, build the production image with minimal footprint
-FROM base
+FROM base AS production
 
 WORKDIR /usr/src/app
 
